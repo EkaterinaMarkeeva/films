@@ -11,8 +11,8 @@ const Stars: FC<StarsProps> = ({count}) => {
 
   return (
     <ul className="card-body-stars u-clearfix">
-      {items.map(() => {
-        return <Star />
+      {items.map((_, index) => {
+        return <Star key={index}/>
         })
       }
     </ul>
